@@ -12,6 +12,174 @@
     />
   </head>
   <body>
+    <section class="w-9/12 mx-auto py-8">
+      <div class="flex">
+        <!--==== mac-img  ====-->
+        <div class="mac-img text-center w-4/6">
+          <img src="./images/mac.png" alt="mac-desktop" />
+        </div>
+        <!--==== mac-information  ====-->
+        <div class="mac-info w-full ml-12">
+          <h1 class="text-3xl font-semibold mb-3">
+            Customize your Blue 24-inch iMac with Apple M1 chip
+          </h1>
+          <p class="text-current mb-16">
+            16-core Neural Engine. Smarts, meet speed. Machine learning (ML)
+            brings task‑smashing speed and automation to video analysis, voice
+            recognition, image processing, and more.
+          </p>
+          <!--=== Memory field ===-->
+          <div class="mac-memory mb-10">
+            <h4 class="font-semibold mb-2">Memory</h4>
+            <button
+              id="FirstMemory-mac"
+              class="
+                border border-black
+                px-3
+                py-2
+                rounded
+                bg-white-500
+                hover:bg-gray-300
+              "
+            >
+              8GB unified memory
+            </button>
+            <button
+              id="secondMemory-mac"
+              class="
+                border border-black
+                px-3
+                py-2
+                rounded
+                bg-white-500
+                hover:bg-gray-300
+              "
+            >
+              16GB unified memory
+            </button>
+          </div>
+          <!-- ===== Storage Field =====-->
+          <div class="mac-storage mb-10">
+            <h4 class="font-semibold mb-2">Storage</h4>
+            <button
+              id="firstStorage-mac"
+              class="
+                border border-black
+                px-3
+                py-2
+                rounded
+                bg-white-500
+                hover:bg-gray-300
+              "
+            >
+              256GB ssd storage
+            </button>
+            <button
+              id="secondStorage-mac"
+              class="
+                border border-black
+                px-3
+                py-2
+                rounded
+                bg-white-500
+                hover:bg-gray-300
+              "
+            >
+              512GB ssd storage
+            </button>
+            <button
+              id="thirdStorage-mac"
+              class="
+                border border-black
+                px-3
+                py-2
+                rounded
+                bg-white-500
+                hover:bg-gray-300
+              "
+            >
+              1TB ssd storage
+            </button>
+          </div>
+          <!--===== Delivery option field  =====-->
+          <div class="mac-delivery mb-10">
+            <h4 class="font-semibold mb-2">Choose your delivery option</h4>
+            <button
+              id="firstDelivery-mac"
+              class="
+                border border-black
+                px-3
+                py-2
+                rounded
+                bg-white-500
+                hover:bg-gray-300
+                mb-3
+              "
+            >
+              Friday, Aug 25 FREE Prime Delivery
+            </button>
+            <button
+              id="secondDelivery-mac"
+              class="
+                border border-black
+                px-3
+                py-2
+                rounded
+                bg-white-500
+                hover:bg-gray-300
+                inline-block
+              "
+            >
+              Friday, Aug 21 Delivery Charge $20
+            </button>
+          </div>
+          <!--===== Count cost field =====-->
+          <table class="w-3/5 font-semibold mb-10">
+            <tr class="border-b pb-10">
+              <td>Best Price</td>
+              <td>$<span id="fixed-price">1299</span></td>
+            </tr>
+            <tr class="border-b pb-3 h-10">
+              <td>Extra Memory Cost</td>
+              <td>$<span id="memory-price">0</span></td>
+            </tr>
+            <tr class="border-b pb-3 h-10">
+              <td>Extra Storage Cost</td>
+              <td>$<span id="storage-price">0</span></td>
+            </tr>
+            <tr class="border-b border-black h-10">
+              <td>Delivery Charge</td>
+              <td>$<span id="delivery-price">1299</span></td>
+            </tr>
+            <tr class="h-10">
+              <td>Total price</td>
+              <td>$<span id="total-price">1299</span></td>
+            </tr>
+          </table>
+          <!--====== promo code field =======-->
+          <div class="mb-10">
+            <h4 class="font-semibold mb-2">Add Promo Code</h4>
+            <div>
+              <input
+                class="text px-3 py-1.5 border border-black rounded border-r-0"
+                id="promo-code"
+              /><button
+                class="px-3 py-2 bg-green-600 rounded text-white font-semibold"
+                id="apply-code"
+              >
+                Apply
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--====== extra discount total ====-->
+      <div class="w-full border-t border-black">
+        <h1 class="text-3xl text-center py-3 font-semibold">
+          Total: $<span>1299</span>
+        </h1>
+      </div>
+    </section>
     <!--======= custom js link =======-->
     <script src="./js/script.js"></script>
   </body>
