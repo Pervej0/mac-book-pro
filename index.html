@@ -12,14 +12,14 @@
     />
   </head>
   <body>
-    <section class="w-9/12 mx-auto py-8">
-      <div class="flex">
+    <section class="lg:w-9/12 mx-auto py-8 w-full sm:w-10/12">
+      <div class="flex lg:flex-row flex-col md:flex-col px-3">
         <!--==== mac-img  ====-->
-        <div class="mac-img text-center w-4/6">
+        <div class="mac-img text-left lg:text-center w-4/6 mb-5">
           <img src="./images/mac.png" alt="mac-desktop" />
         </div>
         <!--==== mac-information  ====-->
-        <div class="mac-info w-full ml-12">
+        <div class="mac-info w-full ml-0 lg:ml-12">
           <h1 class="text-3xl font-semibold mb-3">
             Customize your Blue 24-inch iMac with Apple M1 chip
           </h1>
@@ -36,6 +36,7 @@
               class="
                 border border-black
                 px-3
+                mb-3
                 py-2
                 rounded
                 bg-white-500
@@ -67,6 +68,7 @@
                 border border-black
                 px-3
                 py-2
+                mb-3
                 rounded
                 bg-white-500
                 hover:bg-gray-300
@@ -80,6 +82,7 @@
                 border border-black
                 px-3
                 py-2
+                mb-3
                 rounded
                 bg-white-500
                 hover:bg-gray-300
@@ -161,10 +164,26 @@
             <h4 class="font-semibold mb-2">Add Promo Code</h4>
             <div>
               <input
-                class="text px-3 py-1.5 border border-black rounded border-r-0"
+                class="
+                  text
+                  px-1
+                  sm:px-3
+                  py-1.5
+                  border border-black
+                  rounded
+                  border-r-0
+                "
                 id="promo-code"
               /><button
-                class="px-3 py-2 bg-green-600 rounded text-white font-semibold"
+                class="
+                  px-1.5
+                  sm:px-3
+                  py-2
+                  bg-green-600
+                  rounded
+                  text-white
+                  font-semibold
+                "
                 onclick="promoCodeApply()"
               >
                 Apply
