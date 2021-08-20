@@ -32,7 +32,7 @@
           <div class="mac-memory mb-10">
             <h4 class="font-semibold mb-2">Memory</h4>
             <button
-              id="FirstMemory-mac"
+              id="firstMemory-mac"
               class="
                 border border-black
                 px-3
@@ -149,7 +149,7 @@
             </tr>
             <tr class="border-b border-black h-10">
               <td>Delivery Charge</td>
-              <td>$<span id="delivery-price">1299</span></td>
+              <td>$<span id="delivery-price">0</span></td>
             </tr>
             <tr class="h-10">
               <td>Total price</td>
@@ -165,7 +165,7 @@
                 id="promo-code"
               /><button
                 class="px-3 py-2 bg-green-600 rounded text-white font-semibold"
-                id="apply-code"
+                onclick="promoCodeApply()"
               >
                 Apply
               </button>
@@ -176,7 +176,7 @@
       <!--====== extra discount total ====-->
       <div class="w-full border-t border-black">
         <h1 class="text-3xl text-center py-3 font-semibold">
-          Total: $<span>1299</span>
+          Total: $<span id="discount-cost">1299</span>
         </h1>
       </div>
     </section>
