@@ -17,7 +17,7 @@ function promoCodeApply() {
   let promoCode = document.getElementById("promo-code");
   if (promoCode.value == "stevekaku") {
     let discount = total * codeDiscountRate;
-    discountField.innerText = Math.round(total - discount);
+    discountField.innerText = total - discount;
     console.log(discount);
   } else {
     console.log("please, input a valid promo code.");
